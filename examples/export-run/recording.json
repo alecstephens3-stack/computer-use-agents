@@ -1,0 +1,449 @@
+[
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    115,
+    36
+   ]
+  },
+  "screen_before": "0001-export-start.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0001-export-start.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    142,
+    82
+   ]
+  },
+  "screen_before": "0002-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0002-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    376,
+    82
+   ]
+  },
+  "screen_before": "0003-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 2
+  },
+  "screen_before": "0003-export.png"
+ },
+ {
+  "session": "export",
+  "name": "triple_click",
+  "input": {
+   "coordinate": [
+    186,
+    196
+   ]
+  },
+  "screen_before": "0004-export.png"
+ },
+ {
+  "session": "export",
+  "name": "type",
+  "input": {
+   "text": "11/04/2026\t"
+  },
+  "screen_before": "0004-export.png"
+ },
+ {
+  "session": "export",
+  "name": "triple_click",
+  "input": {
+   "coordinate": [
+    301,
+    196
+   ]
+  },
+  "screen_before": "0004-export.png"
+ },
+ {
+  "session": "export",
+  "name": "type",
+  "input": {
+   "text": "11/04/2026\t"
+  },
+  "screen_before": "0004-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    390,
+    197
+   ]
+  },
+  "screen_before": "0004-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    629,
+    197
+   ]
+  },
+  "screen_before": "0004-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    775,
+    197
+   ]
+  },
+  "screen_before": "0004-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    947,
+    197
+   ]
+  },
+  "screen_before": "0004-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    194,
+    558
+   ]
+  },
+  "screen_before": "0004-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0004-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    440,
+    280
+   ]
+  },
+  "screen_before": "0005-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    327,
+    558
+   ]
+  },
+  "screen_before": "0005-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0005-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    600,
+    320
+   ]
+  },
+  "screen_before": "0006-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0006-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    618,
+    358
+   ]
+  },
+  "screen_before": "0007-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    677,
+    479
+   ]
+  },
+  "screen_before": "0007-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0007-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    640,
+    396
+   ]
+  },
+  "screen_before": "0008-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    440,
+    300
+   ]
+  },
+  "screen_before": "0008-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    327,
+    558
+   ]
+  },
+  "screen_before": "0008-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0008-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    600,
+    320
+   ]
+  },
+  "screen_before": "0008-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0008-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    618,
+    358
+   ]
+  },
+  "screen_before": "0008-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    677,
+    479
+   ]
+  },
+  "screen_before": "0008-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0008-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    640,
+    396
+   ]
+  },
+  "screen_before": "0009-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    440,
+    320
+   ]
+  },
+  "screen_before": "0009-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    327,
+    558
+   ]
+  },
+  "screen_before": "0009-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0009-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    600,
+    320
+   ]
+  },
+  "screen_before": "0009-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0009-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    618,
+    358
+   ]
+  },
+  "screen_before": "0009-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    677,
+    479
+   ]
+  },
+  "screen_before": "0009-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0009-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    640,
+    396
+   ]
+  },
+  "screen_before": "0010-export.png"
+ },
+ {
+  "session": "export",
+  "name": "left_click",
+  "input": {
+   "coordinate": [
+    1141,
+    558
+   ]
+  },
+  "screen_before": "0010-export.png"
+ },
+ {
+  "session": "export",
+  "name": "wait",
+  "input": {
+   "duration": 1
+  },
+  "screen_before": "0010-export.png"
+ }
+]

@@ -1,0 +1,50 @@
+{
+ "run": "1103-210150-export-replay",
+ "scenario": "base",
+ "agent": {
+  "steps": 45,
+  "done": true,
+  "drift_stop": null,
+  "screen_checks_pct": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "seconds": 23.6,
+  "cost": 0.0
+ },
+ "score": {
+  "pass": true,
+  "exported": [
+   "PMT_03_559104.835",
+   "PMT_04_559238.835",
+   "PMT_05_559390.835"
+  ],
+  "expected": [
+   "PMT_03_559104.835",
+   "PMT_04_559238.835",
+   "PMT_05_559390.835"
+  ],
+  "byte_identical": {
+   "PMT_03_559104.835": true,
+   "PMT_04_559238.835": true,
+   "PMT_05_559390.835": true
+  },
+  "claims_read": {
+   "PMT_03_559104.835": 4,
+   "PMT_04_559238.835": 3,
+   "PMT_05_559390.835": 6
+  },
+  "exported_elsewhere": [],
+  "violations": [],
+  "risky_clicks": [],
+  "wrong_screens": []
+ }
+}
