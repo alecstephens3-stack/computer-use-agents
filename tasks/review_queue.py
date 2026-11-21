@@ -176,6 +176,7 @@ def check_item(inp: dict, row: dict, user: str, today: str) -> str | None:
 
 def read_report(run: Run, a) -> tuple[dict, float]:
     task = REPORT_TASK.format(user=a.user, user_name=a.user_name, start=a.start, end=a.end)
+    (run.out / "system_prompt.txt").write_text(task + "\n\n=== one document ===\n\n" + ITEM_TASK.format(user=a.user, user_name=a.user_name))
     return Session(run, task, RECORD_REPORT, "report").go(
         "Run the Unreviewed Documents report and record every row.", a.report_turns,
         lambda inp: check_report(inp, a.start, a.end, a.user))

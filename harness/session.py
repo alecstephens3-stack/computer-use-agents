@@ -142,6 +142,7 @@ class Session:
                     problem = (f"Not recorded: call {name} on its own, in a turn after you have looked at the result "
                                "of your last action.") if len(calls) > 1 else (check(b.input) if check else None)
                     if problem:
+                        r.trace({"event": "report_refused", "session": self.label, "turn": turn, "why": problem})
                         results.append({"type": "tool_result", "tool_use_id": b.id, "is_error": True, "content": problem})
                     else:
                         final = dict(b.input)

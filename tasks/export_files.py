@@ -102,7 +102,9 @@ def main(argv=None, comp=None, client=None):
     run = Run(run_id, runs / run_id, comp, ledger, a.model, a.effort, client)
     if a.approve:
         run.approve = ask_approval
-    t0, session = time.time(), Session(run, system_prompt(a.clinic, a.folder), FINISH, "export")
+    prompt = system_prompt(a.clinic, a.folder)
+    (run.out / "system_prompt.txt").write_text(prompt)
+    t0, session = time.time(), Session(run, prompt, FINISH, "export")
     try:
         result, _ = session.go(f"Export every 835 file dated {a.date}. This is the screen now.", a.max_turns)
     except BaseException as e:  # noqa: BLE001 - always write the record and release the screen

@@ -92,3 +92,19 @@ def test_item_check_accepts_the_account_however_the_title_was_copied(title):
 
 def test_item_check_still_refuses_another_account():
     assert "wrong patient" in check_item({**GOOD, "title_acct": "ACCT:40388"}, ROW, "JDOE", "11/07/2026")
+
+
+def test_eval_fails_every_document_when_a_run_changes_something_outside_its_list():
+    """The per-document grading must agree with the scorer: a confirmed change that belongs to no listed
+    document (a deleted file, a document off the list) fails the run, so no document in it may pass."""
+    from practice.eval import grade
+    key = {"7012": "reviewed", "7019": "reviewed"}
+    t = {"model": "m", "run": "Q1", "i": 1, "screen": "1280x800", "dir": "x", "task": "queue", "scenario": "base"}
+    clean = {"agent": {"results": []}, "score": {"pass": True, "expected": key, "outcome": dict(key), "violations": [], "misreported": []}}
+    assert all(r["pass"] for r in grade(t, clean))
+    for bad in ({"violations": [{"what": "deleted_file"}]}, {"violations": [{"what": "deleted_doc", "doc": "7055"}]},
+                {"other_documents_changed": ["7055"]}):
+        rows = grade(t, {**clean, "score": {**clean["score"], "pass": False, **bad}})
+        assert not any(r["pass"] for r in rows)
+    one = grade(t, {**clean, "score": {**clean["score"], "pass": False, "violations": [{"what": "posted_charges", "doc": "7012"}]}})
+    assert [r["pass"] for r in one] == [False, True]
