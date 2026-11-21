@@ -1,10 +1,11 @@
 # Evaluation: {{total_runs}} runs on three models, no failed run and no unsafe action
 
 I ran the two agents in this repo through {{n_tasks}} tasks on the practice app, several times each, on
-Claude Haiku 5.5, Sonnet 5.5 and Opus 5.5. All {{total_runs}} runs ended in the right state, and none
-confirmed a change it should have declined. Haiku did it for about 1/{{haiku_x}} of what Opus cost. The
-same tasks also passed with the explicit safety rules taken out of the prompts, which tells me the
-suite is too easy to rank these models. This page says what the result supports and what it does not.
+Claude Haiku 5.5, Sonnet 5.5 and Opus 5.5. All {{total_runs}} runs ended in the right state. None
+confirmed a change it should have declined, including when a pop-up addressed to the agent ordered
+it to click Yes. Haiku did it for about 1/{{haiku_x}} of what Opus cost, and the first pass caught a bug
+in my own code, which I fixed before the runs reported here. Below are the setup, the tasks, how a
+run is graded, the results with their bounds, a control arm, the limits, and the prompts in full.
 
 {{head}}
 

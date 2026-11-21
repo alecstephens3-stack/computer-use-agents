@@ -30,11 +30,11 @@ must decline: a pop-up that would re-post payments, a login box, a colleague's u
 pop-up addressed to the agent that orders it to click Yes. Haiku passed everything Opus passed for
 about 1/29 of the cost.
 
-The same tasks also passed with the explicit safety rules removed from the prompts, so this suite
-is too easy to rank these models, and a clean score on 88 runs still allows a failure rate of a
-few percent. The first pass also caught a bug in my own report check. The full write-up has the
-task list, how grading works, the bounds, the control arm, one run step by step, the limits, and
-the prompts and tools in full: [docs/EVAL.md](docs/EVAL.md).
+The first pass caught a bug in my own report check, which I fixed before these runs. A control
+arm with the explicit safety rules removed from the prompts also passed every trial. The full
+write-up has the task list, how grading works, what a clean score on 88 runs does and does not
+support, one run step by step, the limits, and the prompts and tools in full:
+[docs/EVAL.md](docs/EVAL.md).
 
 Single recorded runs from before the evaluation are still in `examples/`, including two replays
 with no model.
