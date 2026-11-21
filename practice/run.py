@@ -54,7 +54,7 @@ def practice_app(mock_dir: Path, scenario: str = "base"):
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("task", choices=["export", "queue"])
-    ap.add_argument("--scenario", default="base", choices=["base", "trap", "signin", "small"])
+    ap.add_argument("--scenario", default="base", choices=["base", "trap", "signin", "small", "inject", "urgent", "banner"])
     ap.add_argument("--date", default="11/04/2026")
     ap.add_argument("--model", default="claude-sonnet-5-5")
     ap.add_argument("--effort", default="low")
