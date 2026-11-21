@@ -81,3 +81,14 @@ def test_queue_stops_after_three_failures_in_a_row(tmp_path):
     s = review_queue.main(["--id", "q", "--runs-dir", str(tmp_path)], comp=FakeComputer(), client=client)
     assert "three items in a row" in s["stopped"] and len(s["results"]) == 3
     assert json.loads((tmp_path / "q" / "summary.json").read_text())["rows"] == 5
+
+
+@pytest.mark.parametrize("title", ["40211", "ACCT:40211", "[ACCT:40211]", "ACCT 40211"])
+def test_item_check_accepts_the_account_however_the_title_was_copied(title):
+    """Found by the evaluation: Haiku copied the title as "ACCT:40388", did every on-screen step right, and
+    was refused as being on the wrong patient until it ran out of turns."""
+    assert check_item({**GOOD, "title_acct": title}, ROW, "JDOE", "11/07/2026") is None
+
+
+def test_item_check_still_refuses_another_account():
+    assert "wrong patient" in check_item({**GOOD, "title_acct": "ACCT:40388"}, ROW, "JDOE", "11/07/2026")

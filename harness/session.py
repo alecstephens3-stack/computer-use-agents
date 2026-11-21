@@ -121,7 +121,7 @@ class Session:
             calls = [b for b in resp.content if b.type == "tool_use"]
             notes = [b.text for b in resp.content if b.type == "text" and b.text.strip()]
             u = resp.usage
-            r.trace({"session": self.label, "turn": turn, "stop": resp.stop_reason, "in": u.input_tokens,
+            r.trace({"session": self.label, "turn": turn, "served_by": getattr(resp, "model", None), "stop": resp.stop_reason, "in": u.input_tokens,
                      "cache_write": getattr(u, "cache_creation_input_tokens", 0),
                      "cache_read": getattr(u, "cache_read_input_tokens", 0), "out": u.output_tokens,
                      "cost": round(c, 5), "notes": notes, "actions": [{"name": b.name, "input": b.input} for b in calls]})

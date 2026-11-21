@@ -94,6 +94,10 @@ def norm(x) -> str:
     return "".join(ch for ch in str(x).upper() if ch.isalnum())
 
 
+def digits(x) -> str:
+    return "".join(ch for ch in str(x) if ch.isdigit())
+
+
 def ymd(x: str) -> tuple[int, int, int]:
     m, d, y = [int(v) for v in str(x).strip().split("/")]
     return (y + 2000 if y < 100 else y, m, d)
@@ -137,7 +141,7 @@ def check_item(inp: dict, row: dict, user: str, today: str) -> str | None:
     st = inp["status"]
     if st in ("not_found", "error"):
         return None
-    if norm(inp["title_acct"]) != norm(row["acct"]):
+    if digits(inp["title_acct"]) != digits(row["acct"]):  # the title reads "[ACCT:40388]"; any of 40388, ACCT:40388, [ACCT:40388] is that account
         return (f"The Documents window title shows ACCT {inp['title_acct']}, but this task is account {row['acct']}. "
                 "You are on the wrong patient: search again for the right account and finish there.")
     if norm(inp["doc_id"]) != norm(row["doc_id"]):

@@ -10,9 +10,12 @@ import json
 from pathlib import Path
 
 # $ per million tokens: input, output, cache read. Cache writes (5 minute) cost 1.25x input.
+# Read from the pricing page on 2026-11-21. Haiku 5.5 is priced by prompt length; these are its rates
+# for prompts up to 100,000 tokens, which every request in these tasks stays under.
 PRICES = {
-    "claude-opus-5-5": (4.00, 20.00, 0.40),
-    "claude-sonnet-5-5": (2.00, 10.00, 0.20),
+    "claude-opus-5-5": (4.00, 20.00, 0.20),
+    "claude-sonnet-5-5": (2.00, 10.00, 0.10),
+    "claude-haiku-5-5": (0.10, 0.50, 0.01),
 }
 
 
